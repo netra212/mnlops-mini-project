@@ -1,4 +1,4 @@
 [core]
     remote = myremote
 ['remote "myremote"']
-    url = /var/folders/gl/mvj3wxqs13lcpx79n6vbzkl00000gn/T/
+    url = s3://netrakc-mlops-mini-project
