@@ -1,4 +1,4 @@
-models
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -90,3 +90,4 @@ target/
 .mypy_cache/
 
 myenv-mini
+models
