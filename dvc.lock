@@ -26,7 +26,7 @@ stages:
       nfiles: 2
     - path: src/data/data_preprocessing.py
       hash: md5
-      md5: 2031843912c4af269f668db21e154783
+      md5: ae3f9d20bda110bcb3fd6863b7d86222
       size: 3895
     outs:
     - path: data/interim
@@ -39,46 +39,46 @@ stages:
     deps:
     - path: data/processed
       hash: md5
-      md5: 4474b5cf967eb9868ee56f8436845c1e.dir
-      size: 103808540
+      md5: 0a49db68cf667bba0a8834d10c35918b.dir
+      size: 124566540
       nfiles: 2
     - path: src/model/model_building.py
       hash: md5
-      md5: 4d89bb8181366c524ab585b55705b265
-      size: 2298
+      md5: dd7b525654ae1171688a4c76682ba7e9
+      size: 2344
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: 81823a2392ed37f88a9d6342afac1b27
-      size: 40717
+      md5: 88fa9ea21e441df6387564262a894e72
+      size: 48717
   model_evaluation:
     cmd: python src/model/model_evaluation.py
     deps:
     - path: models/model.pkl
       hash: md5
-      md5: 81823a2392ed37f88a9d6342afac1b27
-      size: 40717
+      md5: 88fa9ea21e441df6387564262a894e72
+      size: 48717
     - path: src/model/model_evaluation.py
       hash: md5
-      md5: a601b4a5e8d6f66a9cdb79d186defdfb
-      size: 5651
+      md5: ed8cd39fd01614bf29176f9e5b3f36d4
+      size: 5650
     outs:
     - path: reports/experiment_info.json
       hash: md5
-      md5: 0ab16fd14a8dddd3e1bdd539289ee9e2
+      md5: f1e734423a1941989f47507602032c68
       size: 79
     - path: reports/metrics.json
       hash: md5
-      md5: 4d1956a019be5369b707e436cc1e227f
-      size: 136
+      md5: d329018a26dc46a0662e8bafdc3432cf
+      size: 140
   model_registration:
     cmd: python src/model/register_model.py
     deps:
     - path: reports/experiment_info.json
       hash: md5
-      md5: 0ab16fd14a8dddd3e1bdd539289ee9e2
+      md5: f1e734423a1941989f47507602032c68
       size: 79
     - path: src/model/register_model.py
       hash: md5
-      md5: 0b2321b76530e5a63d911b90d9359833
-      size: 2813
+      md5: 70cdeaa91874012fc24f7438ce0fa48e
+      size: 2812
