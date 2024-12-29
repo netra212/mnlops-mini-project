@@ -1,11 +1,11 @@
-from flask import Flask, render_template,request
+
+from flask import Flask, render_template, request
 import mlflow
 import pickle
 import os
 import pandas as pd
 
-import numpy as np
-import pandas as pd
+
 import os
 import re
 import nltk
