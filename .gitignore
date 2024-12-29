@@ -1,3 +1,5 @@
+models/model.pkl
+models/vectorizer.pkl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -90,4 +92,3 @@ target/
 .mypy_cache/
 
 myenv-mini
-models
